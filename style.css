@@ -30,4 +30,18 @@
     position: absolute;
     left: 500px;
     top: 25px;
+
+    animation-name: bar-animation;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bar-animation {
+    from { top: 10%;
+        left: 20%;
+    }
+
+    to { top: 60%;
+        left: 70%;
+    }
 }

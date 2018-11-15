@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lime;
+}
+
+#Ciel {
+    width: 1583px;
+    height: 200px;
+    background-color: aqua;
+}
+
+#NuageGlobal {
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-name: Nuage;
+}
+
+@keyframes Nuage {
+    from {
+        margin-left: 10px;
+    }
+
+    to {
+        margin-left: 1360px;
+    }
+}
+
+#nuage1 {
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 100px;
+    width: 60px;
+    height: 50px;
+    border: white solid;
+    background-color: white;
+    border-radius: 50px;
+}
+
+#nuage2 {
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 70px;
+    width: 60px;
+    height: 50px;
+    border: white solid;
+    background-color: white;
+    border-radius: 50px;
+}
+
+#nuage3 {
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 130px;
+    width: 60px;
+    height: 50px;
+    border: white solid;
+    background-color: white;
+    border-radius: 50px;
+}
+
+#nuage4 {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 60px;
+    height: 50px;
+    border: white solid;
+    background-color: white;
+    border-radius: 50px;
+}
+
+#Toit {
+    margin-top: 15px;
+    margin-left: 100px;
+    border-right : 20px solid transparent;
+    border-bottom : 60px solid peru;
+    border-left : 30px solid transparent;
+    width: 150px;
+    height: 50px;
+}
+
+#BasePalme {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: sandybrown;
+    border-radius: 20px;
+    border: sandybrown solid;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+
+@keyframes  Palmes {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+
+#PalmeH {
+    position: absolute;
+    margin-left: -55px;
+    margin-top: 95px;
+    width: 250px;
+    height: 10px;
+    background-color: white;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: Palmes;
+}
+
+#PalmeV {
+    position: absolute;
+    margin-left: 65px;
+    margin-top: 5px;
+    width: 10px;
+    height: 200px;
+    background-color: white;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: Palmes;
+}
+
+#BaseM {
+    background-color: peru;
+    width: 200px;
+    height: 300px;
+    margin-top: 0;
+    margin-left: 100px;
+}
+
+#Voiture {
+    animation-duration: 5s;
+    animation-name: VoitureAvance;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    position: absolute;
+
+    height: 100%;
+
+    top: 5%;
+    left: 5px;
+}
+
+@keyframes VoitureAvance {
+
+    from {
+        top: 60%;
+        left: 5px;
+    }
+
+    to {
+        top: 60%;
+        left: 1250px;
+    }
+}
+
+#Base {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    background-color: blue;
+    width: 300px;
+    height: 120px;
+    border: blue ;
+    border-radius: 5px;
+}
+
+#RoueGauche {
+    position: absolute;
+    top: 330px;
+    left: 25px;
+    border-style: dashed;
+    background-color: red;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: RoueGauche;
+    animation-fill-mode: forwards;
+}
+
+@keyframes RoueGauche {
+    from {
+        width: 50px;
+        height: 50px;
+        transform: rotate(0);
+    }
+
+    to {
+        width: 50px;
+        height: 50px;
+        transform: rotate(360deg);
+    }
+}
+
+#RoueDroite {
+    position: absolute;
+    top: 330px;
+    left: 225px;
+    border-style: dashed;
+    background-color: red;
+    border-radius: 200px;
+    width: 50px;
+    height: 50px;
+
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: RoueDroite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes RoueDroite {
+    from {
+        width: 50px;
+        height: 50px;
+        transform: rotate(0);
+    }
+
+    to {
+        width: 50px;
+        height: 50px;
+        transform: rotate(360deg);
+    }
+}
+
+#Route {
+    margin-top: 50px;
+    background-color: grey;
+    width: 1583px;
+    height: 200px;
+}
